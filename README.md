@@ -6,12 +6,13 @@
 ------------
 
 
-下载：git clone git://github.com/anghuang/reactfig.git
-安装：
-npm 安装
+###  下载：
+git clone git://github.com/anghuang/reactfig.git
+###  安装：
+###  npm 安装
 1.  npm i
 2.  npm start
-yarn 安装
+###  yarn 安装
 1.  yarn
 2.  yarn start
 
