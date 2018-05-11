@@ -4,7 +4,6 @@ import queryString from 'query-string'
 class order extends Component {
     constructor (props) {
         super();
-        console.log(props)
         console.log(queryString.parse(props.location.search), props.location.state)
     }
     render() {

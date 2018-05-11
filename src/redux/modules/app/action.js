@@ -1,26 +1,23 @@
 
 import * as types from '../../action-types'
-function thunkB(text) {
+import requst from '../../../utils/request'
+function getList() {
     return new Promise((resolve)=> {
-         setTimeout (function () {
-             resolve(text)
-        },20);
+        requst('/todoList.mock','POST','')
+            .then((response)=>{
+                resolve(response)
+            })
     })
-}
 
-function getMemberList(text){
+}
+function getMemberList(){
      return async function (dispatch) {
-         await thunkB(text)
-         console.log(text)
-         return dispatch({type:types.ADD_TODO,payload:text})
+         return dispatch({type:types.ADD_TODO,payload:await getList()})
      }
 }
 function addd(text) {
     return function(dispatch){
-        setTimeout(function () {
-            return dispatch({ type: types.ADD_TODO1, payload:text })
-        },10)
-
+        return dispatch({ type: types.ADD_TODO1, payload:text })
     }
 }
 export default {

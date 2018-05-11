@@ -23,7 +23,7 @@ git clone git://github.com/anghuang/reactfig.git
 现只是初步配置，后续会完善
 ###  新增
 新增mockjs基本配置，
-已有fetch，待封装
+已有fetch，已进行最基础封装
 
 
 ### 后续

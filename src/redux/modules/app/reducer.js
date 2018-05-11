@@ -1,11 +1,11 @@
 
 import actions from './action'
 const state1 = {
-    text: '',
-    list:''
+    text: {},
+    list: {}
 }
 
-const planlist = (state = state,  action = actions) => {
+const planlist = (state = state1,  action = actions) => {
     const {type,payload}=action
     switch (type) {
         case 'ADD_TODO':
